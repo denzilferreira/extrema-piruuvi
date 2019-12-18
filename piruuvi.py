@@ -9,7 +9,7 @@ macs = [
 ]
 
 timeout_in_sec = 4
-url = 'https://pehmo.awareframework.com:8080/1/4lph4num3ric/ruuvi/insert'
+url = 'https://pehmo.awareframework.com:8080/index.php/1/4lph4num3ric/ruuvi/insert'
 
 datas = RuuviTagSensor.get_data_for_sensors(macs, timeout_in_sec)
 datas[macs[0]]["timestamp"] = int(round(time.time() * 1000))
